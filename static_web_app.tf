@@ -18,8 +18,9 @@ resource "azurerm_static_site" "this" {
 }
 
 
-resource "null_resource" "update_appsettings" {
-  provisioner "local-exec" {
-    command = "az staticwebapp list"
-  }
-}
+#resource "null_resource" "update_appsettings" {
+ # provisioner "local-exec" {
+  #  command = "az rest --method put --headers Content-Type=application/json --uri "/subscriptions/<YOUR_SUBSCRIPTION_ID>/resourceGroups/<YOUR_RESOURCE_GROUP_NAME>/providers/Microsoft.Web/staticSites/<YOUR_STATIC_SITE_NAME>/config/functionappsettings?api-version=2019-12-01-preview" --body @local.settings.properties.json"
+    
+  #}
+#}
