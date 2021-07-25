@@ -17,7 +17,9 @@ resource "azurerm_static_site" "this" {
 
 }
 
+
 resource "null_resource" "update_appsettings" {
-
-
+  provisioner "local-exec" {
+    command = "az staticwebapp list"
+  }
 }
