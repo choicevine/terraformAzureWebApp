@@ -4,7 +4,7 @@ Terraform module which creates Static Web Apps on Azure.
 
 ## Terraform versions
 
-Terraform 0.15
+Terraform v1.0.0
 
 This module features the following:
 

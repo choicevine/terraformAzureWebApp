@@ -2,10 +2,10 @@
 # Billing Tags
 # --------------------------------------------------------
 
-costcenter    = "01-644"
-jobnumber     = "701737-04"
+costcenter    = "00-000"
+jobnumber     = "000000-00"
 owner              = "Kieran.Trainor@arup.com"
-application        = "SN Azure Static Website"
+application        = "vtours site"
 requestNumber      = "RITM"
 financeAdmin       = "Kieran.Trainor@arup.com"
 criticality        = "important"
@@ -22,6 +22,11 @@ owners             = ["Kieran.Trainor@arup.com"]
 websites = {
     "afan-vtours"  ={   location = "westeurope"
                         website_dns_name = "afan-vtours.arup.com" 
+                        ad_auth_flag = true 
+                        b2b_group_flag = true
+                    },
+    "qfan-vtours"  ={   location = "westeurope"
+                        website_dns_name = "qfan-vtours.arup.com" 
                         ad_auth_flag = true 
                         b2b_group_flag = true
                     },
