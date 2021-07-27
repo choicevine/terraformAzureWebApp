@@ -19,7 +19,7 @@ This module features the following:
 
 ## Notes
 * `Guide for using App Registration and Static Websites -http://jsandersblog.azurewebsites.net/2021/07/02/walkthrough-static-web-apps-and-aad-authentication/`
-* `The Secret from the Azure App registration needs to be added to the Static App Env_Settings - app_settings = {} not currently supported on tereaform for azurerm_static_site`
+* `The Secret from the Azure App registration needs to be added to the Static App Env_Settings - app_settings = {} not currently supported on tereaform for azurerm_static_site. I have added a LOCAL-EXEC which updates the application setting as a temporary measure`
 * `Guide on how to link githib actions to your Static App - https://docs.microsoft.com/en-us/azure/static-web-apps/github-actions-workflow`
 * `Guide on how to link githib actions to your Static App - https://docs.microsoft.com/en-us/azure/static-web-apps/publish-devops`
 * `This module will output the Github workflow configuration file name (exact name is required)`

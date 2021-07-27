@@ -15,14 +15,16 @@ criticality        = "important"
 # --------------------------------------------------------
 
 rg_location           = "uksouth"
-service = "sn-azure-staticwebsite"
+service = "vtours"
 users_contributors = ["Kieran.Trainor@arup.com"]
 owners             = ["Kieran.Trainor@arup.com"]
 
 websites = {
-    "ktlabs2"  = { location = "westeurope"
-                 website_dns_name = "kttest5.arup.com" 
-                 ad_auth_flag = true 
-                 b2b_group_flag = true},    
-                            
+    "afan-vtours"  ={   location = "westeurope"
+                        website_dns_name = "afan-vtours.arup.com" 
+                        ad_auth_flag = true 
+                        b2b_group_flag = true
+                    },
+                     
+
   }

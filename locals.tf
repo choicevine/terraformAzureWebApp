@@ -1,15 +1,9 @@
 locals{
-
-  #additional_user_data = local.OS_Platform == "windows" && var.domainjoin == true ? templatefile(
-  #  "${path.module}/scripts/windows/domainjoin.ps1",
-  #  merge({
-  #    secrets_manager_secret_id = local.domain_join_secret_id
-  #    ads_fq_domain_name        = var.ads_fq_domain_name
-  #    ads_ou_path               = var.ads_ou_path
-  #    admin_group               = var.admin_group
-  #    }
-  #  )
-  #) : ""
+resource_prefix           = lower("arup-${var.name}-${var.envname}")
+resource_prefix_no_hyphen = "arup${var.name}${var.envname}"
+AADClientID = azuread_application.application[0].application_id
+AADSecret = azuread_application_password.this[0].value
+subscription_id = data.azurerm_subscription.current.id
+static_site_name = azurerm_static_site.this.name
 
 }
-

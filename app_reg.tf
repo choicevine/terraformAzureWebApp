@@ -4,7 +4,7 @@
 
 resource "azuread_application" "application" {
 count = var.ad_auth_flag == true ? 1:0 
-  display_name    = "arup-${var.service}-${var.name}-${terraform.workspace}-app-reg"
+  display_name    = "${local.resource_prefix}-app-auth"
   owners           =  data.azuread_user.owner[*].id
 
    web {

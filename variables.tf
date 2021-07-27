@@ -1,9 +1,3 @@
-
-variable "service" {
-  type        = string
-  description = "Resource Group service name"
-}
-
 variable "name" {
   type        = string
 
