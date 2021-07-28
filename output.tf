@@ -9,7 +9,7 @@ output "default_host_name" {
 }
 
 output "Github_File_Name" {
-  value ="azure-static-web-apps-${trim(azurerm_static_site.this.default_host_name,".azurestaticapps.net")}.yml"  
+  value ="azure-static-web-apps-${trimsuffix(azurerm_static_site.this.default_host_name,".azurestaticapps.net")}.yml"  
 }
 
 
@@ -22,4 +22,6 @@ output "app_reg_secret_password" {
 }
 
 
-
+output "Grant_Admin_Consent_url" {
+  value       =  var.ad_auth_flag == true ? "https://login.microsoftonline.com/${local.tenant_id}/adminconsent?client_id=${local.AADClientID}" :"N/A"
+}

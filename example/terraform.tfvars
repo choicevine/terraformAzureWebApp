@@ -24,12 +24,6 @@ websites = {
                         website_dns_name = "afan-vtours.arup.com" 
                         ad_auth_flag = true 
                         b2b_group_flag = true
-                    },
-    "qfan-vtours"  ={   location = "westeurope"
-                        website_dns_name = "qfan-vtours.arup.com" 
-                        ad_auth_flag = true 
-                        b2b_group_flag = true
-                    },
-                     
+                    },                    
 
   }

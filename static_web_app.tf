@@ -8,7 +8,7 @@ resource "azurerm_static_site" "this" {
   location            = var.location
   sku_size            = "Free"
   sku_tier            = "Free"
-  tags = var.tags
+  
   lifecycle {
     ignore_changes = [
       sku_size, sku_tier

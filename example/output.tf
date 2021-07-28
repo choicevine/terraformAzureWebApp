@@ -14,3 +14,11 @@ output "default_host_name" {
   }
   }
 
+
+
+output "Grant_Admin_Consent_url" {
+  
+    value = {
+    for k, v in module.static_webapp : k => v.Grant_Admin_Consent_url
+  }
+  }

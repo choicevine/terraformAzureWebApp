@@ -21,15 +21,10 @@ This module features the following:
 * `Guide for using App Registration and Static Websites -http://jsandersblog.azurewebsites.net/2021/07/02/walkthrough-static-web-apps-and-aad-authentication/`
 * `The Secret from the Azure App registration needs to be added to the Static App Env_Settings - app_settings = {} not currently supported on tereaform for azurerm_static_site. I have added a LOCAL-EXEC which updates the application setting as a temporary measure`
 * `Guide on how to link githib actions to your Static App - https://docs.microsoft.com/en-us/azure/static-web-apps/github-actions-workflow`
-* `Guide on how to link githib actions to your Static App - https://docs.microsoft.com/en-us/azure/static-web-apps/publish-devops`
+* `Guide on how to link Azure Devops actions to your Static App - https://docs.microsoft.com/en-us/azure/static-web-apps/publish-devops`
 * `This module will output the Github workflow configuration file name (exact name is required)`
-
-
-
-
- app_settings = {
-    "SOME_KEY" = "some-value"
-  }
+* `Terraform provider cannot grant consent to the App registration  - 'there's no supported way of granting consent unless you are signed in as a real user' - https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/grant-admin-consent`
+* `Reference -  https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/grant-admin-consent  - https://github.com/hashicorp/terraform-provider-azuread/issues/33`
 
 
 ## Usage
